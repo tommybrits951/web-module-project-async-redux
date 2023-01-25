@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  padding: 2%;
+  box-sizing: border-box;
+  margin: 0;
+  background: #dbd9d9;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  width: 90%;
+  position: fixed;
+  background: #757373;
+  margin: 0% 3% 6% 3%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.dogImg {
+  height: 30vh;
+  margin: 20px
+}
+.dogCard {
+  padding: 16px;
+  margin: 16px;
+  border: inset;
+  width: 42vw;
+  height: 50vh;
+  border-radius: 6%;
+  box-shadow: 0 10px 8px 0 rgba(0,0,0,0.8);
+}
+.dogBtn {
+  background: #000;
   color: white;
+  margin: 5px 12px;
+  box-shadow: 0 10px 8px 0 rgba(0,0,0,0.8);
 }
 
-.App-link {
-  color: #61dafb;
+.favList {
+  grid-column: 2;
+  width: 30vw;
+  background: #454242;
+  height: 80vh;
+  position: fixed;
+  overflow: scroll;
+  top: 10vh;
+  right: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hidden {
+  display: none;
+}
+.show {
+  display: flex;
+}
+
+.dogList {
+  grid-column: 1;
+  margin-top: 60px;
+}
+.fav > img {
+  width: 20vw;
+}
+.fav {
+  margin: 16px;
 }

@@ -1,10 +1,20 @@
 import React from 'react';
 import './App.css';
+import Doglist from "./components/Doglist"
 
+import Header from "./components/Header"
+
+import FavList from './components/FavList';
 function App() {
+
+
+
   return (
     <div className="App">
-      Async Redux Project
+      <Header/>
+      
+        <Doglist/>
+      <FavList />
     </div>
   );
 }
